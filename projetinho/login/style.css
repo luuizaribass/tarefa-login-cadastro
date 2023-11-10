@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.img {
+    width: 528.5px;
+}
+
+i {
+    color: black;
+}
+
+.barra {
+    width: 100%;
+    height: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 30px 0px;
+    max-width: 1500px;
+    position: relative;
+}
+
+.barra i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.barra input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(133, 0, 172, 1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+}
+
+.barra label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+}
+
+.barra :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #ffffff;
+}
+
+.login {
+    width: 700px;
+    padding: 46px 40px;
+    margin-left: 150px;
+}
+
+.login h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.login .entrar {
+    width: 620px;
+    height: 45px;
+    background: radial-gradient(circle, rgba(133, 0, 172, 1) 18%, rgba(133, 0, 172, 1) 20%, rgba(0, 255, 248, 1) 80%);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+.login .entrar:hover{
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+}
+.login .link {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.link p a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link p a:hover {
+    text-decoration: underline;
+}
+
+.midias {
+    padding: 30px;
+}
+
+.midias img {
+    width: 80px;
+   
+}
+
+.midias a {
+    text-decoration: none;
+    margin: 0px 25px;
+    
+}
+
+.midias img:hover {
+   transform: scale(1.2) ;
+    transition: 0.7s;
+}
